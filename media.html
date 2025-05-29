@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon-32x32.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resume.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Kaushan+Script&family=PT+Sans+Narrow:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans+Narrow:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>ICC-GALLERY | media</title>
+  <style>
+    @media (max-width: 768px) {
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* 2 equal columns */
+        gap: 5px;
+        padding: 1px;
+        width: 100%;
+      }
+
+      .photo {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+      }
+
+      .photo img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+
+      .photo-actions {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+      }
+    }
+
+    .gallery {
+      column-count: 3;
+      column-gap: 8px;
+      padding: 5px;
+      border-bottom: #404143 solid .1px;
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!--navbar-->
+  <div class="loader">
+    <div class="progress">
+    </div>
+  </div>
+  <nav>
+    <img src="https://i.postimg.cc/4xqVB1gZ/Screenshot-2025-04-15-183953-removebg-preview.png" alt="icon">
+    <div class="search">
+      <i class="fa-brands fa-searchengin"></i>
+      <input type="search" placeholder="search for photos" id="searchInput">
+    </div>
+    <a href="">explore</a>
+    <a href="" class="ex">advertise</a>
+    <div class="separator"></div>
+    <button class="btn1">log in</button>
+    <button class="btn2">submit your image</button>
+    <a href="" class="ex">explore</a>
+  </nav>
+  <div class="nav-wrapper">
+
+
+    <div class="nav2" id="navScroll">
+      <a href="index.html"><i class="fa-solid fa-house"></i> home</a>
+      <a href="All.html"></i><i class="fa-solid fa-image"></i> All Photos </a>
+      <a href="today.html"><i class="fa-solid fa-arrow-rotate-left"></i> recent service</a>
+      <div class="separator"></div>
+      <a href="nature.html"><i class="fa-solid fa-tree"></i> Nature photos</a>
+      <a href="cantata.html"><i class="fa-solid fa-microphone-lines"></i> cantata photos</a>
+      <a href="youth.html"><i class="fa-solid fa-child"></i> youth photos</a>
+      <a href="kids.html"><i class="fa-solid fa-children"></i> kids corner</a>
+      <a href="media.html"><i class="fa-solid fa-pager"></i> Media-group photos</a>
+      <a href="dinner.html"><i class="fa-solid fa-utensils"></i> Church-dinner</a>
+      <a href="worship.html"><i class="fa-solid fa-people-group"></i> worship-team</a>
+    </div>
+    <button class="nav-arrow right" onclick="scrollNav(200)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+
+
+
+  <!--main-section-->
+  <section class="main-page" style=" height: 85vh;">
+    <div class="main-container">
+
+      <div class="carousel-section">
+        <div class="carousel-track">
+
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <img src="https://i.postimg.cc/8PYM4HrK/DSC-0053.jpg" alt="Slide 1">
+            <div class="slide-content">
+              <h1>media crew</h1>
+              <p>every memory stored here</p>
+
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="https://i.postimg.cc/FRCkpMrB/DSC-0032.jpg" alt="Slide 2">
+            <div class="slide-content">
+              <h1>media crew</h1>
+              <p>every memory stored here</p>
+
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://i.postimg.cc/nhsx9NgL/DSC-0035.jpg" alt="Slide 2">
+            <div class="slide-content">
+              <h1>media crew</h1>
+              <p>every memory stored here</p>
+
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://i.postimg.cc/vZ59y2h4/DSC-0030.jpg" alt="Slide 2">
+            <div class="slide-content">
+              <h1>media crew</h1>
+              <p>every memory stored here</p>
+
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://i.postimg.cc/2y0vsp8v/DSC-0022.jpg" alt="Slide 2">
+            <div class="slide-content">
+              <h1>media crew</h1>
+              <p>every memory stored here</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn prev" style="display: none;">&#10094;</button>
+        <button class="carousel-btn next" style="display: none;">&#10095;</button>
+
+        <div class="carousel-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="static-right">
+        <div class="top-box">
+          <img src="https://i.postimg.cc/WbkqmYQ5/DSC-0034-1.jpg" alt="Microsoft 365">
+
+        </div>
+        <div class="bottom-boxes">
+          <div class="small-box">
+            <img src="https://i.postimg.cc/Ss7cG2Bg/DSC-0038.jpg" alt="Raid Anniversary">
+
+          </div>
+          <div class="small-box">
+            <img src="https://i.postimg.cc/WbkqmYQ5/DSC-0034-1.jpg" alt="Cooking Fever">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hed">
+      <h2><i class="fa-solid fa-fire fa-beat" style="color: #74C0FC;"></i> Media crew</h2>
+    </div>
+    <main class="gallery">
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/8PYM4HrK/DSC-0053.jpg"
+          data-src="https://i.postimg.cc/8PYM4HrK/DSC-0053.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/8PYM4HrK/DSC-0053.jpg?dl=1"
+            download="https://i.postimg.cc/8PYM4HrK/DSC-0053.jpg?dl=1" class="btn" title="Download">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <button class="btn fullscreen-btn" title="Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/FRCkpMrB/DSC-0032.jpg"
+          data-src="https://i.postimg.cc/FRCkpMrB/DSC-0032.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/FRCkpMrB/DSC-0032.jpg?dl=1"
+            download="https://i.postimg.cc/FRCkpMrB/DSC-0032.jpg?dl=1" class="btn" title="Download">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <button class="btn fullscreen-btn" title="Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/RZrqHdNC/DSC-0051.jpg"
+          data-src="https://i.postimg.cc/RZrqHdNC/DSC-0051.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/RZrqHdNC/DSC-0051.jpg?dl=1"
+            download="https://i.postimg.cc/RZrqHdNC/DSC-0051.jpg?dl=1" class="btn" title="Download">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <button class="btn fullscreen-btn" title="Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/L58t4fCB/DSC-0029-1.jpg"
+          data-src="https://i.postimg.cc/L58t4fCB/DSC-0029-1.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/L9zNT3j7/DSC-0029-1.jpg?dl=1"
+            download="https://i.postimg.cc/L9zNT3j7/DSC-0029-1.jpg?dl=1" class="btn" title="Download"><i
+              class="fa-solid fa-download"></i></a>
+          <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/Y0D1v9Tc/DSC-0029.jpg"
+          data-src="https://i.postimg.cc/Y0D1v9Tc/DSC-0029.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/HWd3P82L/DSC-0029.jpg?dl=1"
+            download="https://i.postimg.cc/HWd3P82L/DSC-0029.jpg?dl=1" class="btn" title="Download"><i
+              class="fa-solid fa-download"></i></a>
+          <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/ZRQnhTzr/DSC-0029.jpg"
+          data-src="https://i.postimg.cc/ZRQnhTzr/DSC-0029.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/ZRQnhTzr/DSC-0029.jpg?dl=1"
+            download="https://i.postimg.cc/ZRQnhTzr/DSC-0029.jpg?dl=1" class="btn" title="Download">download<i
+              class="fa-solid fa-download"></i></a>
+          <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg"
+          data-src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1"
+            download="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1" class="btn" title="Download">download<i
+              class="fa-solid fa-download"></i></a>
+          <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="skeleton-loader"></div>
+        <img class="lazy-img" src="https://i.postimg.cc/L58t4fCB/DSC_0029_(1).jpg"
+          data-src="https://i.postimg.cc/L58t4fCB/DSC_0029_(1).jpg" alt="Church photo"
+          onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+          style="display: none;" />
+        <div class="photo-actions">
+          <a href="https://i.postimg.cc/L58t4fCB/DSC_0029_(1).jpg?dl=1"
+            download="https://i.postimg.cc/L58t4fCB/DSC_0029_(1).jpg?dl=1" class="btn" title="Download">download<i
+              class="fa-solid fa-download"></i></a>
+          <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+      <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Your ICC CHURCH in Association with BAGGYUNIT-DEVELOPERS ORG. All rights reserved.</p>
+        <p>Developed with ❤️ by <a href="https://yourportfolio.com" target="_blank">BAGGYUNIT-DEVELOPERS
+            ORGANISATION</a></p>
+        <div class="social-links">
+          <a href="https://github.com/baggyunittechs" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/thika_west_driller" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://studio.youtube.com/channel/UCgGlQgo6dNViCo1wZIZt-Jw" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+          <a href="mailto:juliuskyuma24@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <div class="fullscreen-overlay" id="fullscreenOverlay">
+
+    <a href="" class="btn1" title="save"><i class="fa-solid fa-bookmark"></i></a>
+    <a href="" class="btn2" title="share"><i class="fa-solid fa-share-nodes"></i></a>
+    <span class="close-btn" id="closeBtn"><i class="fa-solid fa-compress"></i></span>
+    <img src="" alt="Fullscreen Image" id="fullscreenImg" />
+  </div>
+  <script src="today.js" defer></script>
+</body>
+
+</html>

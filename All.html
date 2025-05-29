@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Kaushan+Script&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Kaushan+Script&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>ICC-GALLERY | gallery</title>
+
+</head>
+
+<body>
+    <!--navbar-->
+    <nav>
+        <img src="https://i.postimg.cc/4xqVB1gZ/Screenshot-2025-04-15-183953-removebg-preview.png" alt="icon">
+        <div class="search">
+            <i class="fa-brands fa-searchengin"></i>
+            <input type="search" placeholder="search for photos" id="searchInput">
+        </div>
+        <a href="soon.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> explore</a>
+        <a href="soon.html" class="ex">advertise</a>
+        <div class="separator"></div>
+        <button class="btn1">log in</button>
+        <button class="btn2">submit your image</button>
+        <a href="soon.html" class="ex">explore</a>
+    </nav>
+
+    <div class="nav-wrapper">
+
+
+        <div class="nav2" id="navScroll">
+            <a href="index.html"><i class="fa-solid fa-house"></i> home</a>
+            <a href="All.html"></i><i class="fa-solid fa-image"></i> All Photos </a>
+            <a href="today.html"><i class="fa-solid fa-arrow-rotate-left"></i> recent service</a>
+            <div class="separator"></div>
+            <a href="nature.html"><i class="fa-solid fa-tree"></i> Nature photos</a>
+            <a href="cantata.html"><i class="fa-solid fa-microphone-lines"></i> cantata photos</a>
+            <a href="youth.html"><i class="fa-solid fa-child"></i> youth photos</a>
+            <a href="kids.html"><i class="fa-solid fa-children"></i> kids corner</a>
+            <a href="media.html"><i class="fa-solid fa-pager"></i> Media-group photos</a>
+            <a href="dinner.html"><i class="fa-solid fa-utensils"></i> Church-dinner</a>
+            <a href="worship.html"><i class="fa-solid fa-people-group"></i> worship-team</a>
+        </div>
+
+        <button class="nav-arrow right" onclick="scrollNav(200)">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="loader">
+        <div class="progress">
+        </div>
+    </div>
+    
+
+
+    <!--main-section-->
+
+    <section class="main-page">
+
+
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="https://i.postimg.cc/kgqDWxy1/Chat-GPT-Image-May-12-2025-06-30-20-PM.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="https://i.postimg.cc/P51wVrFT/DSC-0153.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="https://i.postimg.cc/mrzT7TVG/DSC-0161.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <div class="welcome-message">
+                <h1>Welcome to the ICC Church Gallery</h1>
+                <p class="subtitle">“Where Every Moment Tells His Story”</p>
+                <p class="body-text">
+                    We invite you to journey through our gallery and experience the powerful moments, joyful gatherings,
+                    and faith-filled milestones that reflect the heart of our ICC family. Each photo is a testimony of
+                    God’s goodness and the vibrant community we cherish.
+                </p>
+
+            </div>
+        </div>
+        </div>
+
+
+        <div class="today">
+            <button>TODAY'S SERVICE</button>
+            <a href="today.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/VkpjVnGd/DSC-0002.jpg"
+                    data-src="https://i.postimg.cc/VkpjVnGd/DSC-0002.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/VkpjVnGd/DSC-0002.jpg?dl=1"
+                        download="https://i.postimg.cc/VkpjVnGd/DSC-0002.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/xdmKD8hg/DSC-0003.jpg"
+                    data-src="https://i.postimg.cc/xdmKD8hg/DSC-0003.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/xdmKD8hg/DSC-0003.jpg?dl=1"
+                        download="https://i.postimg.cc/xdmKD8hg/DSC-0003.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/bwsxg3R7/DSC-0005.jpg"
+                    data-src="https://i.postimg.cc/bwsxg3R7/DSC-0005.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/bwsxg3R7/DSC-0005.jpg?dl=1"
+                        download="https://i.postimg.cc/bwsxg3R7/DSC-0005.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/3JgNTpxk/DSC-0006.jpg"
+                    data-src="https://i.postimg.cc/3JgNTpxk/DSC-0006.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/3JgNTpxk/DSC-0006.jpg?dl=1"
+                        download="https://i.postimg.cc/3JgNTpxk/DSC-0006.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/jdrqZ54t/DSC-0009.jpg"
+                    data-src="https://i.postimg.cc/jdrqZ54t/DSC-0009.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/jdrqZ54t/DSC-0009.jpg?dl=1"
+                        download="https://i.postimg.cc/jdrqZ54t/DSC-0009.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/PfDrWZZS/DSC-0010.jpg"
+                    data-src="https://i.postimg.cc/PfDrWZZS/DSC-0010.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/PfDrWZZS/DSC-0010.jpg?dl=1"
+                        download="https://i.postimg.cc/PfDrWZZS/DSC-0010.jpg?dl=1" class="btn" title="Download">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <button class="btn fullscreen-btn" title="Fullscreen">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <div class="today">
+            <button>Nature-photos</button>
+            <a href=""><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg"
+                    data-src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1"
+                        download="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg"
+                    data-src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1"
+                        download="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg"
+                    data-src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1"
+                        download="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg"
+                    data-src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1"
+                        download="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg"
+                    data-src="https://i.postimg.cc/RV1sZQZK/IMG-20241210-WA0018.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1"
+                        download="https://i.postimg.cc/rc3vgf6n/IMG-20241210-WA0018.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg"
+                    data-src="https://i.postimg.cc/Hs1vmPdT/IMG-20241210-WA0017.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1"
+                        download="https://i.postimg.cc/nZCyv6W9/IMG-20241210-WA0017.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+
+
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <div class="today">
+            <button>Cantata-photos</button>
+            <a href="cantata.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/tJtCyqJW/DSC-0189.jpg"
+                    data-src="https://i.postimg.cc/tJtCyqJW/DSC-0189.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/qJWtsgdb/DSC-0189.jpg?dl=1"
+                        download="https://i.postimg.cc/qJWtsgdb/DSC-0189.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/vmkmt2Cg/DSC-0190.jpg"
+                    data-src="https://i.postimg.cc/vmkmt2Cg/DSC-0190.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/KZvgFdNN/DSC-0190.jpg?dl=1"
+                        download="https://i.postimg.cc/KZvgFdNN/DSC-0190.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/C5VLWBhw/DSC-0191.jpg"
+                    data-src="https://i.postimg.cc/C5VLWBhw/DSC-0191.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/qJNh6yW6/DSC-0191.jpg?dl=1"
+                        download="https://i.postimg.cc/qJNh6yW6/DSC-0191.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/7ZQYnPRY/DSC-0199.jpg"
+                    data-src="https://i.postimg.cc/7ZQYnPRY/DSC-0199.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/1yynPfc6/DSC-0199.jpg?dl=1"
+                        download="https://i.postimg.cc/1yynPfc6/DSC-0199.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/JhX2nPVc/DSC-0195.jpg"
+                    data-src="https://i.postimg.cc/JhX2nPVc/DSC-0195.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/nnSb3P35/DSC-0195.jpg?dl=1"
+                        download="https://i.postimg.cc/nnSb3P35/DSC-0195.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/gjKGd008/DSC-0211.jpg"
+                    data-src="https://i.postimg.cc/gjKGd008/DSC-0211.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/vYJTrgFq/DSC-0211.jpg?dl=1"
+                        download="https://i.postimg.cc/vYJTrgFq/DSC-0211.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <div class="today">
+            <button>Youth-photos</button>
+            <a href="youth.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/XNR30MV2/DSC-0188.jpg"
+                    data-src="https://i.postimg.cc/XNR30MV2/DSC-0188.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/NYM0mYZw/DSC-0188.jpg?dl=1"
+                        download="https://i.postimg.cc/NYM0mYZw/DSC-0188.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/XXSs1k68/DSC-0187.jpg"
+                    data-src="https://i.postimg.cc/XXSs1k68/DSC-0187.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/59jD0sPZ/DSC-0187.jpg?dl=1"
+                        download="https://i.postimg.cc/59jD0sPZ/DSC-0187.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/ry0cbyL0/DSC-0188-1.jpg"
+                    data-src="https://i.postimg.cc/ry0cbyL0/DSC-0188-1.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/pvkTmyGZ/DSC-0188-1.jpg?dl=1"
+                        download="https://i.postimg.cc/pvkTmyGZ/DSC-0188-1.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/CLCKPMjC/DSC-0182.jpg"
+                    data-src="https://i.postimg.cc/CLCKPMjC/DSC-0182.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/px4ndprS/DSC-0182.jpg?dl=1"
+                        download="https://i.postimg.cc/px4ndprS/DSC-0182.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/CLCKPMjC/DSC-0182.jpg"
+                    data-src="https://i.postimg.cc/CLCKPMjC/DSC-0182.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/px4ndprS/DSC-0182.jpg?dl=1"
+                        download="https://i.postimg.cc/px4ndprS/DSC-0182.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/kXKKJsjD/DSC-0041.jpg"
+                    data-src="https://i.postimg.cc/kXKKJsjD/DSC-0041.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/6w10h1nV/DSC-0041.jpg?dl=1"
+                        download="https://i.postimg.cc/6w10h1nV/DSC-0041.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <div class="today">
+            <button>Dinner-photos</button>
+            <a href="dinner.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/TPNHXdYs/DSC-0097.jpg"
+                    data-src="https://i.postimg.cc/TPNHXdYs/DSC-0097.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/2zCph3pC/DSC-0097.jpg?dl=1"
+                        download="https://i.postimg.cc/2zCph3pC/DSC-0097.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/XvLBrt69/DSC-0061.jpg"
+                    data-src="https://i.postimg.cc/XvLBrt69/DSC-0061.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/W2LGHP9Y/DSC-0061.jpg?dl=1"
+                        download="https://i.postimg.cc/W2LGHP9Y/DSC-0061.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/PqT8rT9t/DSC-0065.jpg"
+                    data-src="https://i.postimg.cc/PqT8rT9t/DSC-0065.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/XnyKLvgy/DSC-0065.jpg?dl=1"
+                        download="https://i.postimg.cc/XnyKLvgy/DSC-0065.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/RF8FfBsJ/DSC-0076.jpg"
+                    data-src="https://i.postimg.cc/RF8FfBsJ/DSC-0076.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/VfsbxsXg/DSC-0076.jpg?dl=1"
+                        download="https://i.postimg.cc/VfsbxsXg/DSC-0076.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/8ztZhpWC/DSC-0102.jpg"
+                    data-src="https://i.postimg.cc/8ztZhpWC/DSC-0102.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/D7KR3mw1/DSC-0102.jpg?dl=1"
+                        download="https://i.postimg.cc/D7KR3mw1/DSC-0102.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/rmz3ddPc/DSC-0093.jpg"
+                    data-src="https://i.postimg.cc/rmz3ddPc/DSC-0093.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/cscSbw7K/DSC-0093.jpg?dl=1"
+                        download="https://i.postimg.cc/cscSbw7K/DSC-0093.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <div class="today">
+            <button>kids'-corner</button>
+            <a href="kids.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/L58t4fCB/DSC-0029-1.jpg"
+                    data-src="https://i.postimg.cc/L58t4fCB/DSC-0029-1.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/L9zNT3j7/DSC-0029-1.jpg?dl=1"
+                        download="https://i.postimg.cc/L9zNT3j7/DSC-0029-1.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/Y0D1v9Tc/DSC-0029.jpg"
+                    data-src="https://i.postimg.cc/Y0D1v9Tc/DSC-0029.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/HWd3P82L/DSC-0029.jpg?dl=1"
+                        download="https://i.postimg.cc/HWd3P82L/DSC-0029.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg"
+                    data-src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1"
+                        download="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg"
+                    data-src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1"
+                        download="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg"
+                    data-src="https://i.postimg.cc/283QPQBC/DSC-0026.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1"
+                        download="https://i.postimg.cc/gdHgL4zL/DSC-0026.jpg?dl=1" class="btn"
+                        title="Download">download<i class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+
+        <div class="today">
+            <button>worship-team</button>
+            <a href="worship.html"><button>More <I class="fa-solid fa-chevron-right"></I></button></a>
+        </div>
+        <main class="gallery1">
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/pTGv4bgV/DSC-0007.jpg"
+                    data-src="https://i.postimg.cc/pTGv4bgV/DSC-0007.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/tqyg19k6/DSC-0007.jpg?dl=1"
+                        download="https://i.postimg.cc/tqyg19k6/DSC-0007.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/FzMMX9Gv/DSC-0010.jpg"
+                    data-src="https://i.postimg.cc/FzMMX9Gv/DSC-0010.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/PfJTZJwC/DSC-0010.jpg?dl=1"
+                        download="https://i.postimg.cc/PfJTZJwC/DSC-0010.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/xTKfj7m5/DSC-0012.jpg"
+                    data-src="https://i.postimg.cc/xTKfj7m5/DSC-0012.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/q0FzwHMP/DSC-0012.jpg?dl=1"
+                        download="https://i.postimg.cc/q0FzwHMP/DSC-0012.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/x1c63rPy/DSC-0018.jpg"
+                    data-src="https://i.postimg.cc/x1c63rPy/DSC-0018.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/kqyL9q6Z/DSC-0018.jpg?dl=1"
+                        download="https://i.postimg.cc/kqyL9q6Z/DSC-0018.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/CKbd31Nh/DSC-0006-1.jpg"
+                    data-src="https://i.postimg.cc/CKbd31Nh/DSC-0006-1.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/CwQDfnnq/DSC-0006-1.jpg?dl=1"
+                        download="https://i.postimg.cc/CwQDfnnq/DSC-0006-1.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="skeleton-loader"></div>
+                <img class="lazy-img" src="https://i.postimg.cc/Y0c4z5fh/DSC-0154.jpg"
+                    data-src="https://i.postimg.cc/Y0c4z5fh/DSC-0154.jpg" alt="Church photo"
+                    onload="this.previousElementSibling.style.display='none'; this.style.display='block';"
+                    style="display: none;" />
+                <div class="photo-actions">
+                    <a href="https://i.postimg.cc/2ky4rm1F/DSC-0154.jpg?dl=1"
+                        download="https://i.postimg.cc/2ky4rm1F/DSC-0154.jpg?dl=1" class="btn" title="Download"><i
+                            class="fa-solid fa-download"></i></a>
+                    <button class="btn fullscreen-btn" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+            <!-- Add more <div class="photo"> ... </div> blocks as needed -->
+
+        </main>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Your ICC CHURCH in Association with BAGGYUNIT-DEVELOPERS ORG. All rights reserved.</p>
+                <p>Developed with ❤️ by <a href="https://yourportfolio.com" target="_blank">BAGGYUNIT-DEVELOPERS
+                        ORGANISATION</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/baggyunittechs" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/thika_west_driller" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://studio.youtube.com/channel/UCgGlQgo6dNViCo1wZIZt-Jw" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="mailto:juliuskyuma24@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+
+        <a href="" class="btn1" title="save"><i class="fa-solid fa-bookmark"></i></a>
+        <a href="" class="btn2" title="share"><i class="fa-solid fa-share-nodes"></i></a>
+        <span class="close-btn" id="closeBtn"><i class="fa-solid fa-compress"></i></span>
+        <img src="" alt="Fullscreen Image" id="fullscreenImg" />
+    </div>
+
+    <script src="resume.js"></script>
+</body>
+
+</html>
